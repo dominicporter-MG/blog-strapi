@@ -4,19 +4,19 @@
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
           <li>
-            <a href="/">Strapi Blog </a>
+            <a href="/">Strapi Courses </a>
           </li>
         </ul>
       </div>
 
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-          <li v-for="category in categories" v-bind:key="category.id">
+          <li v-for="language in languages" v-bind:key="language.id">
             <router-link
-              :to="{ path: '/category/' + category.id }"
-              :key="category.id"
+              :to="{ path: '/language/' + language.id }"
+              :key="language.id"
             >
-              {{ category.name }}
+              {{ language.name }}
             </router-link>
           </li>
         </ul>
@@ -32,13 +32,13 @@ export default {
   name: "Nav",
   data() {
     return {
-      categories: []
+      languages: []
     };
   },
   apollo: {
-    categories: gql`
-      query Categories {
-        categories {
+    languages: gql`
+      query Languages {
+        languages {
           id
           name
         }

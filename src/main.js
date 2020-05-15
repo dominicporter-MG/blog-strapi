@@ -19,6 +19,18 @@ const router = new VueRouter({
   routes: [
     {
       path: "/",
+      components: require("./containers/Courses.vue")
+    },
+    {
+      path: "/course/:id",
+      components: require("./containers/Course.vue")
+    },
+    {
+      path: "/course_edition/:id",
+      components: require("./containers/CourseEdition.vue")
+    },
+    {
+      path: "/articles/",
       components: require("./containers/Articles.vue")
     },
     {
