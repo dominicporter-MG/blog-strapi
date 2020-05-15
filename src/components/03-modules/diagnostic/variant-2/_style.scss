@@ -1,0 +1,131 @@
+
+.diagnostic {
+
+    /deep/.radio-buttons, /deep/.link {
+        display: block;
+        background: $white;
+        margin: $spacing-half 0;
+        padding: 0;
+        border-radius: $radius-full;
+        cursor: pointer;
+
+        /*&:hover {
+            border-color: $zest-green;
+
+            .label_text, .link_text {
+                background: $zest-green;
+                color: $white !important;
+            }
+        }*/
+
+        .link_text {
+            display: block;
+            border: 2px solid $line-colour-1;
+            border-radius: $radius-full;
+            margin: 0;
+            padding: $spacing-half;
+            text-align: center;
+            color: $text-colour-1;
+            cursor: pointer;
+        }
+
+        .label {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            .label_text {
+                display: block;
+                margin: 0;
+                border: 2px solid $line-colour-1;
+                border-radius: $radius-full;
+                padding: $spacing-half;
+                text-align: center;
+                color: $text-colour-1;
+                cursor: pointer;
+            }
+
+            input, em {
+                display: none;
+            }
+    
+            input:checked ~ .label_text {
+                border-color: $zest-green;
+                background: $zest-green;
+                color: $white;
+            }
+        }
+    }
+
+    /deep/ .button {
+        width: 100%;
+        margin-top: $spacing-full;
+    }
+
+    .level-1, .level-2, .level-3, .level-4, .level-5  {
+        display: none;
+    }
+
+    &.level-1 .level-1 {
+        display: block;
+    }
+
+    &.level-2 .level-1 {
+        display: block;
+
+        > /deep/.radio-buttons  {
+            display: none;
+
+        }
+
+        .level-2 {
+            display: block;
+        }
+    }
+
+    &.level-3 .level-1, &.level-3 .level-2 {
+        display: block;
+
+        > /deep/.radio-buttons  {
+            display: none;
+
+        }
+
+        .level-3 {
+            display: block;
+        }
+    }
+
+    &.level-4 .level-1, &.level-4 .level-2, &.level-4 .level-3 {
+        display: block;
+
+        > /deep/.radio-buttons  {
+            display: none;
+
+        }
+
+        .level-4 {
+            display: block;
+        }
+    }
+
+    &.level-5 .level-1, &.level-5 .level-2, &.level-5 .level-3, &.level-5 .level-4 {
+        display: block;
+
+        > /deep/.radio-buttons  {
+            display: none;
+
+        }
+
+        .level-5 {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+    .diagnostic {
+    
+    }
+}

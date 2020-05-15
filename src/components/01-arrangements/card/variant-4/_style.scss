@@ -1,0 +1,66 @@
+
+.card {
+	display: block;
+	box-sizing: border-box;
+	border: none;
+	font-family: $font-family-regular;
+	text-decoration: none;
+	background: $white;
+	position: relative;
+	overflow: hidden;
+	color: $eigengrau;
+	margin-bottom: $spacing-full;
+	padding: $spacing-half  $spacing-half  $spacing-half calc(150px + #{$spacing-half});
+	min-height: 150px;
+
+	/deep/.card_media {
+		position: absolute;
+		top: $spacing-half;
+		left: $spacing-half;
+
+		img, video {
+			max-width: 150px;
+		}
+	}
+
+	/deep/.card_title {
+		margin: 0;
+		padding: 0 $spacing-full;
+		font-size: $_24px !important;
+		line-height: $spacing-full;
+	}
+
+	/deep/.card_content {
+		padding: 0 $spacing-full;
+
+		:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&.card--lozenge {
+		padding: $spacing-half;
+		border-radius: $radius-full;
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.card {
+		border-radius: 0;
+
+		/deep/.card_media {
+			display: block;
+			min-height: 150px;
+			background: #ccc;
+		}
+		
+		/deep/.card_title {
+			padding: 0 $spacing-full;
+		}
+	
+		/deep/.card_content {
+
+		}
+	}
+}

@@ -28,16 +28,12 @@
           :source="course.content"
           id="editor"
         />
-        <p v-if="course.published_at">
-          {{ moment(course.published_at).format("MMM Do YY") }}
-        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script>  
-var moment = require("moment");  
 import VueMarkdownIt from "vue-markdown-it";  
 import gql from "graphql-tag";
 
@@ -45,7 +41,6 @@ export default {
   data() {
     return {
       course: {},
-      moment: moment,
       api_url: process.env.VUE_APP_STRAPI_API_URL,
       routeParam: this.$route.params.id
     };

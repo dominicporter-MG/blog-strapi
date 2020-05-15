@@ -1,0 +1,17 @@
+
+.page-footer {
+	width: 100%;
+	padding: $spacing-half 0;
+	background: $white;
+	border-top: 1px solid $line-colour-1;
+	min-height: 0;
+
+	.container {
+		padding: 0 $spacing-full;
+	}
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+
+}

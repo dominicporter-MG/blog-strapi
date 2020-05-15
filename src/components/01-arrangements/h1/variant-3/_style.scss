@@ -1,0 +1,40 @@
+
+.h1  {
+	margin: 0;
+	padding: 1em 0 .5em 0;
+	font-weight: 400;
+	line-height: 1.15;
+	font-family: $font-family-subheading;
+	margin-top: 0;
+	font-size: $_47px;
+	letter-spacing: 0;
+	text-transform: capitalize;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&.h1--centred {
+		text-align: center;
+	}
+
+	&.h1--right {
+		text-align: right;
+	}
+
+	&.h1--stacked {
+		
+		span {
+			display: block;
+			font-size: .8em;
+			padding-bottom: $spacing-quarter;
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+	.h1  {
+		font-size: $_55px;
+	}
+}

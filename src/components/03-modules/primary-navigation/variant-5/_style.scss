@@ -1,0 +1,141 @@
+
+.primary-navigation {
+	box-sizing: border-box;
+	background: $white;
+	width: 100vw;
+	height: 100vh;
+	padding: $spacing-double;
+	position: fixed;
+	top: 0;
+	left: -100vw;
+	@include slide(left);
+	z-index: 9999999;
+
+	&.primary-navigation--visible {
+		left: 0;
+	}
+
+	.primary-navigation_trigger {
+		position: absolute;
+		top: $spacing-full;
+		left: auto;
+		right: 0;
+
+		.icon--after {
+	
+			&:after {
+				color: $blackboard-grey;
+			}
+		}
+	} 
+
+	 .primary-navigation_list {
+	 	list-style: none;
+	 	margin: 0;
+	 	padding: 0;
+
+		.primary-navigation_list-item {
+		 	display: block;
+		 	margin: 0 0 $spacing-quarter 0;
+
+			 .primary-navigation_link {
+				display: block;
+				border-radius: $radius-half;
+			 	padding: 0 $spacing-full;
+				font-size: $_13px;
+			 	text-decoration: none;
+				font-family: $font-family-regular;
+				color: $text-colour-2;
+				cursor: pointer;
+				overflow: hidden;
+				background-color: transparent;
+				color: $text-colour-1;
+
+				.icon--before {
+					display: none;
+					float: left;
+					margin: $spacing-quarter $spacing-half 0 0;
+					line-height: $_40px;
+
+					&:before {
+						display: inline-block;
+						font-size: $_24px;
+					}
+				}
+
+				.link_text {
+					display: block;
+					float: left;
+					margin: $spacing-quarter 0 0 0;
+					line-height: $_46px;
+				}
+
+				&.primary-navigation_link--active, &.router-link-active {
+					color: $zest-green;
+				}
+			 }
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+	.primary-navigation_trigger {
+		display: none !important;
+	}
+
+	.primary-navigation {
+		background: none;
+		width: auto;
+		height: auto;
+		padding: 0;
+		position: static;
+		top: 0;
+		left: 0;
+
+		 .primary-navigation_list {
+			 text-align: right;
+	
+			.primary-navigation_list-item {
+				display: inline-block;
+				margin: 0;
+
+				.primary-navigation_link {
+					background: none;
+					color: $text-colour-2;
+					padding: $spacing-half $spacing-full;
+
+					&.primary-navigation_link--active, &.router-link-active {
+						background: none;
+						color: $zest-green;
+
+						&:hover {
+							background: none;
+							color: $zest-green;
+
+							.link_text {
+								border-color: transparent;
+							}
+						}
+					}
+
+					.link_text {
+						line-height: 1rem;
+						border-bottom: 1px solid transparent;
+						border-color: transparent;
+						transition: border-color .3s ease-in-out;
+					}
+
+					&:hover {
+						background: none;
+						color: $text-colour-2;
+
+						.link_text {
+							border-color: $text-colour-2; 
+						}
+					}
+				}
+			}
+		}
+	}
+}

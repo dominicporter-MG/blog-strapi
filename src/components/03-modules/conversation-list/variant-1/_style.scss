@@ -1,0 +1,51 @@
+
+.conversation-list {
+	background: $white;
+
+	.list-heading {
+		margin: 0;
+		padding: $spacing-full;
+		border-bottom: 1px solid $line-colour-2;
+		background: $blackboard-grey;
+		color: $white;
+		font-family: $font-family-bold;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0 $spacing-half;
+		list-style: none;
+
+		li {
+			border-bottom: 1px solid $line-colour-2;
+			padding: $spacing-half $spacing-quarter $spacing-half $spacing-double;
+			position: relative;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			&:before {
+				content: " ";
+				display: block;
+				width: calc(#{$dimension-full} - #{$dimension-eighth});
+				height: calc(#{$dimension-full} - #{$dimension-eighth});
+				background: $line-colour-1;
+				border-radius: calc(#{$radius-full} * 3);
+				position: absolute;
+				top: calc(#{$spacing-half} + #{$spacing-quarter});
+				left: $spacing-quarter;
+			}
+
+			.conversation_title {
+				color: $link-colour;
+				cursor: pointer;
+			}
+
+			/deep/.t3 {
+				padding-top: $spacing-quarter;
+			}
+		
+		}
+	}
+}

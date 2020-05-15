@@ -1,0 +1,24 @@
+
+.progress-indicator {
+	background: $mist-grey;
+	height: $dimension-eighth;
+	overflow: hidden;
+	border-radius: $radius-half;
+
+	.fill {
+		display: block;
+		height: $dimension-eighth;
+		width: 0;
+		background: $zest-green;
+		transition: width 1s ease-in-out;
+
+		.number {
+			height: 0;
+			width: 0;
+			overflow: hidden;
+			position: absolute;
+			left: -9999px;
+		}
+	}
+
+}

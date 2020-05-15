@@ -1,0 +1,42 @@
+
+.searchable-list {
+
+    /deep/.text-input {
+        padding-bottom: $spacing-full;
+        
+        input {
+            margin: 0 auto;
+        }
+
+        .label {
+            display: none;
+        }
+    }
+	
+    .ul {
+
+        .list-item {
+            padding-left: 0;
+
+            &:before {
+                display: none;
+            }
+
+            /deep/.accordion {
+                margin-bottom: $spacing-double;
+
+                .accordion_header {
+                    padding-right: $dimension-full;
+                    position: relative;
+
+                    .icon--after {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+	
+}

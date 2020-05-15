@@ -1,0 +1,38 @@
+.chatbox {
+
+	.chatbox_window {
+		border: 1px solid $line-colour-1;
+		padding: $spacing-half;
+		height: 100px;
+		overflow-y: scroll;
+		margin-bottom: $spacing-half;
+
+		p {
+			
+			strong {
+				font-weight: bold;
+				display: inline-block;
+				margin-right: $spacing-half;
+			}
+		}
+	}
+
+	.chatbox_tools {
+		position: relative;
+		padding-right: 112px;
+
+		.text-input {
+
+			input {
+				max-width: none;
+				line-height: $dimension-full;
+			}
+		}
+
+		.button {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}

@@ -1,0 +1,137 @@
+
+.card {
+	display: block;
+	box-sizing: border-box;
+	border: none;
+	border-radius: $radius-full;
+	position: relative;
+	cursor: pointer;
+	font-family: $font-family-regular;
+	text-decoration: none;
+	background: $white;
+	position: relative;	
+	overflow: hidden;
+	margin-bottom: $spacing-full;
+
+	/deep/.card_title {
+		margin: 0;
+		padding: $spacing-half $spacing-full;
+		font-size: $_14px;
+		line-height: $dimension-full;
+		color: $text-colour-1;
+	}
+
+	/deep/.card_content {
+		padding: 0 $spacing-full $spacing-double $spacing-full;
+		font-size: $_12px;
+		line-height: $_22px;
+		color: $text-colour-1;
+
+		:first-child {
+			margin-top: 0;
+		}
+
+		.t3 {
+			line-height: 1.4rem;
+			font-size: $_12px;
+		}
+
+		.progress-indicator {
+			position: absolute;
+			bottom: $spacing-full;
+			left: $spacing-full;
+			width: calc(100% - #{$spacing-double});
+		}
+
+		.category_list {
+			list-style: none;
+			padding-left: 0;
+			position: absolute;
+			bottom: $spacing-full;
+			left: $spacing-full;
+
+			li {
+				float: left;
+				margin-right: $spacing-quarter;
+
+				&:before {
+					content: " ";
+					display: block;
+					width: $dimension-quarter;
+					height: $dimension-quarter;
+					border-radius: $radius-full;
+				}
+
+				&.change:before {
+					background: #F9A700;
+				}
+
+				&.diversity-and-inclusion:before {
+					background: #15AF99;
+				}
+
+				&.management-development:before {
+					background: #25647C;
+				}
+
+				&.onboarding:before {
+					background: #F5762F;
+				}
+
+
+				&.performance-management:before {
+					background: #355A95;
+				}
+
+				&.personal-effectiveness:before {
+					background: #F8655C;
+				}
+
+				&.ethics:before {
+					background: #7978C6;
+				}
+
+				&.respect:before {
+					background: #BA255C;
+				}
+
+				&.customer-service:before {
+					background: #24A2DF;
+				}
+
+
+				&.reorganisation:before {
+					background: #D6152D;
+				}
+
+				&.employee-engagement:before {
+					background: #22BFC6;
+				}
+
+				span{
+					position: absolute;
+					top: -9999px;
+					left: -9999px;
+					height: 0;
+					overflow: hidden;
+				}
+			}
+
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.card {
+		min-height: 240px;
+		
+		/deep/.card_title {
+
+		}
+	
+		/deep/.card_content {
+			padding: $spacing-half $spacing-full;
+		}
+	}
+}

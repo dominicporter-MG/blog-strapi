@@ -1,0 +1,13 @@
+
+.solution-page {
+    background: $white;
+    min-height: calc(100vh - 63px);
+    padding-bottom: $spacing-double;
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+    .solution-page {
+
+    }    
+}

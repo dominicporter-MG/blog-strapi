@@ -1,0 +1,88 @@
+
+.filter-bar {
+    border: 1px solid $line-colour-1;
+    overflow: hidden;
+
+    /deep/.accordion_header {
+        font-size: $_16px;
+        font-family: $font-family-regular !important;
+        padding: 0 $spacing-half 0 $spacing-double;
+        position: relative;
+        
+        /deep/.icon--after {
+            position: absolute;
+            top: -$spacing-eighth !important;
+            left: $spacing-quarter;
+        
+            &:after {
+                font-size: $_26px;
+            }
+        }
+    }
+
+    /deep/.accordion_content {
+        padding-top: $spacing-half;
+
+        /deep/.check-box {
+            padding-top: $spacing-full;
+
+            .legend {
+                display: block;
+                width: 100%;
+                padding:  0 0 $spacing-half $spacing-double;
+                border-bottom: 1px solid $line-colour-1;
+                text-transform: uppercase;
+                font-size: $_12px;
+            }
+
+            .label, .label:first-of-type {
+                margin-top: 0;
+                padding: 0  0 $spacing-half $spacing-double;
+                border-bottom: 1px solid $line-colour-1;
+
+                .label_text {
+                    font-size: $_14px;
+                }
+
+                input, em:before {
+                    left: $spacing-half;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+    .filter-bar {
+        border: none;
+        padding: 0;
+
+        /deep/.accordion_content {
+            padding-top: 0;
+    
+            /deep/.check-box {
+                padding-top: $spacing-half;
+    
+                .legend {
+                    display: block;
+                    width: 100%;
+                    padding:  0 0 $spacing-full 0;
+                    border-bottom: none;
+                }
+    
+                .label, .label:first-of-type {
+                    margin-top: 0;
+                    padding: 0 0 0 calc(#{$spacing-full} + #{$spacing-quarter});
+                    border-bottom: none;
+    
+                    input, em:before {
+                        left: 0;
+                    }
+                }
+    
+            }
+        }
+    }
+}

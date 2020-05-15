@@ -1,0 +1,122 @@
+.calendar {
+
+    .month {
+        background: pink;
+        text-align: center;
+
+        .ul {
+
+            li {
+                padding: $spacing-half;
+                margin: $spacing-quarter;
+                display: none;
+
+                &:before {
+                    display: none;
+                }
+
+                &.active {
+                    display: block;
+                    background: red;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .dayasnumber {
+
+        .ul {
+
+            li {
+                box-sizing: border-box;
+                width: calc(14.28% - #{$spacing-quarter});
+                padding: $spacing-half;
+                margin: 0 $spacing-quarter $spacing-quarter 0;
+                display: inline-block;
+                border: 1px solid $line-colour-1;
+
+                &:nth-child(7n+7){
+                    margin-right: 0;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+                &.active {
+                    background: red;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .dayname{
+
+        .ul {
+
+            li {
+                box-sizing: border-box;
+                width: calc(50% - #{$spacing-quarter});
+                padding: $spacing-half;
+                margin: 0 $spacing-quarter $spacing-quarter 0;
+                display: inline-block;
+                border: 1px solid $line-colour-1;
+                text-align: center;
+
+                &:nth-child(even){
+                    margin-right: 0;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+                &.active {
+                    background: red;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .time {
+
+        .ul {
+
+            li {
+                box-sizing: border-box;
+                width: calc(33.3% - #{$spacing-quarter});
+                padding: $spacing-half;
+                margin: 0 $spacing-quarter $spacing-quarter 0;
+                display: inline-block;
+                border: 1px solid $line-colour-1;
+                text-align: center;
+
+                &:nth-child(3n+3){
+                    margin-right: 0;
+                }
+
+                &:nth-child(-n+9){
+                    display: none;
+                }
+
+                &:nth-child(n+20){
+                    display: none;
+                }
+
+
+                &:before {
+                    display: none;
+                }
+
+                &.active {
+                    background: red;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,208 @@
+
+/*------------------------------------*\
+    #COLOURS
+\*------------------------------------*/
+
+//Raw palette --
+
+//Pattern system colours
+
+$pattern-black: #000000;
+$brand-1: $pattern-black;
+
+$pattern-offblack: #222222;
+$brand-2: $pattern-offblack;
+
+$pattern-white: #ffffff;
+$brand-3: $pattern-white;
+
+$pattern-offwhite: #f0f0f0;
+$brand-4: $pattern-offwhite;
+
+$pattern-grey-1: #999999;
+$brand-5: $pattern-grey-1;
+
+$pattern-grey-2: #cccccc;
+$brand-6: $pattern-grey-2;
+
+$pattern-grey-3: #eeeeee;
+$brand-6: $pattern-grey-3;
+
+$pattern-grey-4: #E0E4F1;
+
+$pattern-green-1: #5d913f;
+$brand-7: $pattern-green-1;
+
+$pattern-blue-1: #24cfe2;
+$brand-8: $pattern-blue-1;
+
+$pattern-orange-1: #CA5E40;
+$brand-9: $pattern-orange-1;
+
+$pattern-red-1: #b91438;
+$brand-10: $pattern-red-1;
+
+//Mind Gym brand
+$zest-green: #2cd649;
+.zest-green-background {
+    background: $zest-green;
+}
+.zest-green-colour{
+    color: $zest-green;
+}
+
+$white: #ffffff;
+.white-background {
+    background: $white;
+}
+.white-colour{
+    color: $white;
+}
+
+$mist-grey: #f0f2f5;
+.mist-grey-background {
+    background: $mist-grey;
+}
+.mist-grey-colour {
+    color: $mist-grey;
+}
+
+$blackboard-grey: #3a3a3e;
+.blackboard-grey-background {
+    background: $blackboard-grey;
+}
+.blackboard-grey-colour {
+    color: $blackboard-grey;
+}
+
+$marengo: #5c5c61;
+.marengo-background {
+    background: $marengo;
+}
+.marengo-colour {
+    color: $marengo;
+}
+
+$eigengrau: #16161d;
+.eigengrau-background {
+    background: $eigengrau;
+}
+.eigengrau-colour {
+    color: $eigengrau;
+}
+
+$turquoise: #24bec6;
+.turquoise-background {
+    background: $turquoise;
+}
+.turquoise-colour {
+    color: $turquoise;
+}
+
+$amethyst: #7978c7;
+.amethyst-background {
+    background: $amethyst;
+}
+.amethyst-colour {
+    color: $amethyst;
+}
+
+$cobalt: #23a0f4;
+.cobalt-background {
+    background: $cobalt;
+}
+.cobalt-colour {
+    color: $cobalt;
+}
+
+$coral: #f8655b;
+.coral-background {
+    background: $coral;
+}
+.coral-colour {
+    color: $coral;
+}
+
+$gold: #f9a600;
+.gold-background {
+    background: $gold;
+}
+.gold-colour {
+    color: $gold;
+}
+
+
+//Functional pallette --
+
+$line-colour-1: $mist-grey;
+$line-colour-2: $blackboard-grey;
+$shadow-colour-1: $eigengrau;
+
+$action-colour: $cobalt;
+$active-colour: $mist-grey;
+
+$background-colour-1: $white;
+
+$text-colour-1: $marengo;
+$text-colour-2: $white;
+$text-colour-3: $eigengrau;
+
+$link-colour: $action-colour;
+
+$primary-button-background: $zest-green;
+$primary-button-background-hover: darken($zest-green, 10%);
+$primary-button-border: $zest-green;
+$primary-button-border-hover: $zest-green;
+$primary-button-colour: $text-colour-2;
+$primary-button-colour-hover: $text-colour-2;
+$primary-button-background-disabled: $text-colour-1;
+$primary-button-border-disabled: $mist-grey;
+$primary-button-colour-disabled: $mist-grey;
+
+$secondary-button-background: $pattern-grey-4;
+$secondary-button-background-hover: $pattern-grey-4;
+$secondary-button-border: $pattern-grey-4;
+$secondary-button-border-hover: $pattern-grey-4;
+$secondary-button-colour: $eigengrau;
+$secondary-button-colour-hover: $eigengrau;
+$secondary-button-background-disabled: $mist-grey;
+$secondary-button-border-disabled: $mist-grey;
+$secondary-button-colour-disabled: $mist-grey;
+
+$message-colour-success: $turquoise;
+$message-colour-warning: $gold;
+$message-colour-information: $text-colour-1;
+$message-colour-error: $pattern-red-1;
+
+$message-background-success: $turquoise;
+$message-background-warning: $gold;
+$message-background-information: $cobalt;
+$message-background-error: $pattern-red-1;
+
+.token-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .t2 {
+        margin: 0;
+        text-align: center;
+        color: #666;
+        padding-left: 0;
+
+        &:before {
+            display: none;
+        }
+
+        > div {
+            border: 1px solid #ccc;
+            border-width: 1px 0 0 0;
+            padding: 20px;
+        }
+    }
+}
+
+
+
+
+ 

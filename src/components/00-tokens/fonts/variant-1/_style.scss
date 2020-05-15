@@ -1,0 +1,95 @@
+
+$font_path: '~@/assets/fonts';
+
+@font-face {
+    font-family: 'GothamProBlack';
+    src:
+      url('#{$font_path}/gotham-pro-black-regular/font.ttf?9dsbvr') format('truetype'),
+      url('#{$font_path}/gotham-pro-black-regular/font.woff?9dsbvr') format('woff'),
+      url('#{$font_path}/gotham-pro-black-regular/font.svg?9dsbvr#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+  font-family: 'GothamProBold';
+  src:
+    url('#{$font_path}/gotham-pro-bold/font.ttf?9dsbvr') format('truetype'),
+    url('#{$font_path}/gotham-pro-bold/font.woff?9dsbvr') format('woff'),
+    url('#{$font_path}/gotham-pro-bold/font.svg?9dsbvr#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+    font-family: 'GothamProMedium';
+    src:
+      url('#{$font_path}/gotham-pro-medium/font.ttf?9dsbvr') format('truetype'),
+      url('#{$font_path}/gotham-pro-medium/font.woff?9dsbvr') format('woff'),
+      url('#{$font_path}/gotham-pro-medium/font.svg?9dsbvr#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'GothamProRegular';
+    src:
+      url('#{$font_path}/gotham-pro-regular/font.ttf?9dsbvr') format('truetype'),
+      url('#{$font_path}/gotham-pro-regular/font.woff?9dsbvr') format('woff'),
+      url('#{$font_path}/gotham-pro-regular/font.svg?9dsbvr#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+  font-family: 'icons';
+  src:
+    url('#{$font_path}/icons/icons.ttf?9dsbvr') format('truetype'),
+    url('#{$font_path}/icons/icons.woff?9dsbvr') format('woff'),
+    url('#{$font_path}/icons/icons.svg?9dsbvr#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {//Force SVG on IOS 
+
+    @font-face {
+        font-family: 'GothamProBlack';
+        src: url('#{$font_path}/gotham-pro-black-regular/font.svg?9dsbvr#icons') format('svg');
+    }
+
+    @font-face {
+      font-family: 'GothamProBold';
+      src: url('#{$font_path}/gotham-pro-bold/font.svg?9dsbvr#icons') format('svg');
+  }
+
+    @font-face {
+        font-family: 'GothamProMedium';
+        src: url('#{$font_path}/gotham-pro-medium/font.svg?9dsbvr#icons') format('svg');
+    }
+
+    @font-face {
+        font-family: 'GothamProRegular';
+        src: url('#{$font_path}/gotham-pro-regular/font.svg?9dsbvr#icons') format('svg');
+    }
+}
+
+
+/*------------------------------------*\
+    #FONTS
+\*------------------------------------*/
+
+
+$font-family-heading: 'GothamProBlack';
+$font-family-subheading: 'GothamProMedium';
+$font-family-regular: 'GothamProRegular';
+$font-family-bold: 'GothamProBold';
+$font-family-icon: 'icons';
+
+

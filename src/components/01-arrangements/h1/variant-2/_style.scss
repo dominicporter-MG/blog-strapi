@@ -1,0 +1,67 @@
+
+.h1  {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	margin: 0 0 $spacing-full 0;
+	padding: 1em 0 .5em 0;
+	font-weight: 400;
+	line-height: 1.15;
+	font-family: $font-family-bold;
+	color: $text-colour-1; 
+	font-size: $_35px;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	position: relative;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&.h1--centred {
+		text-align: center;
+	}
+
+	&.h1--right {
+		text-align: right;
+	}
+
+	&.h1--stacked {
+		
+		span {
+			display: block;
+			font-size: .8em;
+			padding-bottom: $spacing-quarter;
+		}
+	}
+
+	&:before {
+		content: " ";
+		display: block;
+		width: calc(#{$dimension-full} + #{$dimension-half});
+		height: $dimension-eighth;
+		background: $zest-green;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+	.h1  {
+
+	}
+}
+
+@media only screen and (min-width : $breakpoint-4){
+
+	.h1  {
+
+	}
+}
