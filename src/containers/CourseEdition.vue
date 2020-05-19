@@ -81,11 +81,11 @@ export default {
         default: ""
         }
     },
-    computed: {
-      classes() {
-        return `solution-page ${this.classList}`;  
-      }
-    },
+  computed: {
+    classes() {
+      return `solution-page ${this.classList}`;  
+    }
+  },
   apollo: {
     courseEdition: {
       query: gql`
